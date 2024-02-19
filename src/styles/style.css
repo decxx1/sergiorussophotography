@@ -475,7 +475,7 @@ pre {
     .container {
       max-width: 1140px; } }
 @media (max-width: 1366px) {
-	#aside #logo span.img {
+	#aside #logo img {
       width: 176px !important; }
 }
 .container-fluid {
@@ -7010,12 +7010,9 @@ h1, h2, h3, h4, h5,
     width: 100%;
     font-weight: 700;
     font-size: 24px; }
-    #aside #logo span.img {
-      display: block;
+    #aside #logo img {
       width: 234px;
-      height: 133px;
-      margin: 0 auto;
-      margin-bottom: 10px; }
+      margin: 20px 0 42px 0; }
     @media (max-width: 991.98px) {
       #aside #logo {
         margin-bottom: 20px; } }
@@ -7342,7 +7339,7 @@ h1, h2, h3, h4, h5,
       .hero-wrap .text h1 span {
         color: #000000; }
       @media (max-width: 991.98px) {
-		  #aside #logo span.img {
+		  #aside #logo img {
       width: 176px !important; }
         .hero-wrap .text h1 {
           font-size: 22px; } }

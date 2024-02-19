@@ -2,7 +2,11 @@
 <template>
     <a ref="burgerButton" @click.prevent="handleMenuToggle" class="js-nav-toggle nav-toggle"><i></i></a>
     <aside ref="menu" id="aside" role="complementary" class="js-fullheight text-center" >
-        <div id="logo"><a href="./"><span class="img" style="background-image: url(src/images/logo.png);"></span></a></div>
+        <div id="logo">
+            <a href="./">
+                <img class="img" src="../images/logo.png" alt="logo" />
+            </a>
+        </div>
         <nav id="main-menu" role="navigation">
             <ul>
                 <li :class="{'active': path === '/'}"><a href="./">Inicio</a></li>
