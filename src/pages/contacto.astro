@@ -1,0 +1,63 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import ContactForm from '@/components/ContactForm.vue';
+---
+<Layout 
+    title="Contacto - Sergio Russo Photography"
+    canonical="https://sergiorussophotography.com.ar/contacto"
+    metaTitle="Contactame - Sergio Russo Photography"
+    metaDescription="¿Tienes alguna consulta o proyecto en mente? Escríbeme aquí, estoy dispuesto a ayudarte a capturar tus momentos más especiales en imágenes llenas de glamour y elegancia. Contacta conmigo ahora."
+    metaImg="https://sergiorussophotography.com.ar/images/logo.png"
+    >
+    <section class="ftco-section ftco-bread">
+        <div class="container">
+            <div class="row no-gutters slider-text justify-content-center align-items-center">
+              <div class="col-md-8 ">
+                <p class="breadcrumbs" transition:animate="slide"><span class="mr-2"><a href="./">Inicio</a></span> <span>Contacto</span></p>
+                <h1 class="bread" transition:animate="slide">Contacto</h1>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section contact-section">
+        <div class="container">
+            <div class="row d-flex mb-5 contact-info" transition:animate="fade">
+                <div class="col-md-12 mb-4">
+                    <h2 class="h3 font-weight-bold">Información</h2>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-4 d-flex">
+                    <div class="info bg-light p-4">
+                        <p><strong>WhatsApp:</strong><br/><a target="_blank" href="https://wa.me/+5492613405270"> 261 340-5270</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="info bg-light p-4">
+                        <p><strong>Teléfono:</strong><br/><a target="_blank" href="tel://2613405270"> 261 340-5270</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="info bg-light p-4">
+                        <p><strong>E-mail:</strong> <a target="_blank" href="mailto:info@sergiorussophotography.com.ar">info@sergiorussophotography.com.ar</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row block-9">
+                <ContactForm client:idle />
+
+                <div class="col-md-6 d-flex">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359097.0352519425!2d-73.13976363687406!3d-34.6958919865506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679745b5dd5fffd%3A0x902586f1d047824!2sMendoza!5e0!3m2!1ses!2sar!4v1675738810028!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<!-- recaptcha v3 -->
+<script defer="defer" src="https://www.google.com/recaptcha/api.js?render=6LdO_mckAAAAAP0RgsLqjupdrSwP3hMNoxFlyqod"></script>
+<style>
+.fullHeight{
+    height: 100vh;
+    object-fit: cover;
+}
+</style>

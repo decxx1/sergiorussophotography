@@ -1,0 +1,64 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import images from '@/services/images.json';
+---
+<Layout 
+    title="Galería - Sergio Russo Photography"
+    canonical="https://sergiorussophotography.com.ar/galeria"
+    metaTitle="Galería de Fotos de Sergio Russo - Fotografías de estilo propio"
+    metaDescription="Explora la impresionante galería de fotos de Sergio Russo, un experto fotógrafo en glamour y moda. Descubre su estilo único y vive la emoción en cada imagen."
+    metaImg="https://sergiorussophotography.com.ar/src/images/galeria/thumb/04.jpg"
+    >
+    <section class="ftco-section ftco-bread">
+        <div class="container">
+            <div class="row no-gutters slider-text justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <p class="breadcrumbs" transition:animate="slide"><span class="mr-2"><a href="./">Inicio</a></span> <span>Galería</span></p>
+                    <h1 class="bread" transition:animate="slide">Mi galería de fotos</h1>
+                </div>
+                <div class="col-md-6 text-center" transition:animate="slide">
+                    <img class="mt-5" src="src/images/logo-blanco.png" style="width: 250px;" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section-3">
+        <div class="photograhy">
+            <div class="grid-wrapperimg" id="galleryID">
+                {
+                    images.map((image, index) => (
+                        <a class={image.class} data-pswp-src={image.src} data-pswp-width={image.width} data-pswp-height={image.height}>
+                            <img loading="lazy" class="img-grid-mosaic" src={image.thumb} alt={'Sergio-russo-photography '+index} />
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<script>
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const lightbox = new PhotoSwipeLightbox({
+    gallery: '#galleryID',
+    children: 'a',
+    mouseMovePan: true,
+    showHideAnimationType: 'zoom',
+    initialZoomLevel: 'fit',
+    secondaryZoomLevel: 1.5,
+    maxZoomLevel: 1,
+
+    imageClickAction: 'close',
+    tapAction: 'close',
+
+    pswpModule: () => import('photoswipe')
+    
+});
+
+lightbox.init();
+</script>
+<style>
+
+</style>

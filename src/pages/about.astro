@@ -1,0 +1,68 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Instagram from '@/components/icons/Instagram.astro';
+---
+<Layout 
+    title="Sobre Mi - Sergio Russo Photography"
+    canonical="https://sergiorussophotography.com.ar/about"
+    metaTitle="Sobre Mi - Sergio Russo Photography"
+    metaDescription="Soy Sergio Russo, un apasionado fotógrafo con más de 15 años de experiencia en el arte de capturar imágenes. Especializado en glamour y retrato, me esfuerzo por capturar la belleza y la esencia de cada momento. Conóceme más en mi página web"
+    metaImg="https://sergiorussophotography.com.ar/images/author.jpg"
+    >
+    <section class="ftco-section-no-padding bg-light">
+        <div class="hero-wrap">
+            <div class="overlay"></div>
+            <div class="d-flex">
+                <div class="slider">
+                    <img  class="w-100 full-height superponer" src="src/images/author.jpg" alt="slide 1"/>
+                </div>
+                <div class="author-info text p-3 p-md-4 mt-4 mb-4">
+                    <div class="desc" transition:animate="fade">
+                        <span class="big-letter">Sergio Russo</span>
+                        <h1 class="big-letter">Biografía</h1>
+                        <h1 class="mb-4"><span>Sergio Russo</span></h1>
+                        <p>Nació en <strong>Argentina</strong>, en la ciudad de <strong>Mendoza.</strong></p> <p>Estudió <strong>fotografía</strong> y comenzó a transitar distintos estilos en los que se <strong>destacó</strong> en el <strong>retrato</strong> y el <strong>glamour</strong>. También lo hizo en <strong>moda, publicidad, paisajes, deportes y de estudio</strong>.</p> 
+                        <p>En su carrera, ha sido convocado para la cobertura del evento deportivo internacional <strong>“Golf por los caminos del vino”</strong>. También por grupos de rock como los <strong>“Enanitos Verdes”</strong>, Trabajó también para el exitoso programa radial <strong>EXPRESO LATINO</strong>, realizando la cobertura fotográfica a diferentes artistas renombrados como <strong>JAF, MARCELA MORELO, MANUEL WIRZT, DESTINO SAN JAVIER, LOS NOCHEROS, NAHUEL PENNISI y FITO PAEZ</strong> entre otros. y por <strong>expertos en psicología y psiquiatría</strong> para documentar la realización de talleres terapéuticos.</p>
+                        <p><strong>Publica</strong> por primera vez en la revista <strong>Sexy Glam</strong> ( de Nueva York ) en marzo de 2013. Desde entonces ha realizado varias producciones para la mencionada revista. </p>
+                        <ul class="ftco-social mt-3" transition:animate="slide">
+                          <li ><a target="_blank" href="https://www.instagram.com/sergio_russo_photography/"><Instagram /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section img mt-5 mb-5" style="background-color:#555">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <blockquote class="ludwig text-white" style="width:-moz-available;width:-webkit-fill-available;">Fotografiar es dibujar con luz las cosas que existen o no.<br/>
+                Es mi manera de ver al mundo</blockquote>
+                <img style="width:270px" src="src/images/logo-blanco.png" />
+            </div>
+        </div>
+    </section>
+</Layout>
+
+
+<style>
+.superponer{
+  position: absolute;
+}
+.slider {
+  width:50%;
+  position:relative;
+  bottom: 50%;
+}
+@media (max-width: 767.98px) {
+  .slider {
+    width: 30%;
+  }
+  /* .slider__dots {
+    left: 25% !important;
+  } */
+}
+.full-height{
+    height: 100vh;
+    object-fit: cover;
+}
+</style>
