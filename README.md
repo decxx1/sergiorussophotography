@@ -12,3 +12,4 @@
 - Envío de formulario con vue, axios y vue-sonner para toast
 
 <img src="portada.jpg" />
+<img src="galeria.jpg" />
