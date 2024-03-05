@@ -28,7 +28,7 @@ import images from '@/services/images.json';
                 {
                     images.map((image, index) => (
                         <a class={image.class} data-pswp-src={image.src} data-pswp-width={image.width} data-pswp-height={image.height}>
-                            <img loading="lazy" class="img-grid-mosaic" src={image.thumb} alt={'Sergio-russo-photography '+index} />
+                            <img loading="lazy" class="img-grid-mosaic" src={image.thumb} alt={'Sergio-russo-photography '+ index} />
                         </a>
                     ))
                 }

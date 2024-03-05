@@ -30,7 +30,6 @@ const {
 	metaDescription,
 	metaImg,
 } = Astro.props;
-const path = Astro.url.pathname;
 ---
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCS7RMMN7C" is:inline></script>
 <script is:inline>
@@ -78,8 +77,7 @@ const path = Astro.url.pathname;
 	</head>
 	<body>
 		<div id="page">
-			<Header 
-				path={path}
+			<Header
 				client:load 
 			/>
 			<div id="main">

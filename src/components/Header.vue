@@ -29,15 +29,10 @@
 </template>
 <script>
     export default {
-        props: {
-            path:{
-                type: String,
-                required: true
-            }
-        },
         data(){
             return {
                 active: false,
+                path: ''
             }
         },
         methods: {
@@ -79,6 +74,7 @@
                 document.addEventListener('click', this.handleClickOutside);
                 window.addEventListener('scroll', this.handleScroll);
             }
+            this.path = window.location.pathname;
         },
         beforeUnmount() {
             //eliminamos eventos de click y scroll solo para pantallas chicas
