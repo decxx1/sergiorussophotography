@@ -1,8 +1,8 @@
 <template>
     <div class="slider" >
         <TransitionGroup name="fade">
-            <img :key="1" v-show="slidePos === 0" class="w-100 full-height superponer" src="../images/author-2.jpg" alt="slide 1"/>
-            <img :key="2" v-show="slidePos === 1" class="w-100 full-height superponer" src="../images/slider.jpg" alt="slide 2"/>
+            <img :key="1" v-show="slidePos === 0" class="w-100 full-height superponer" src="/images/author-2.jpg" alt="slide 1"/>
+            <img :key="2" v-show="slidePos === 1" class="w-100 full-height superponer" src="/images/slider.jpg" alt="slide 2"/>
         </TransitionGroup>
         <div class="slider__dots" :data-pos="slidePos">
           <a class="slider__indicator" :class="indicatorClass"></a>
