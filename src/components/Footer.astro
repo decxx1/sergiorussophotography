@@ -1,6 +1,15 @@
 ---
 import Phone from '@/components/icons/Phone.astro';
 import Envelope from '@/components/icons/Envelope.astro';
+import {
+    telphoneLinkeable,
+    telphoneReadble,
+    whatsappLinkeable,
+    whatsappReadble,
+    email,
+    siteKey,
+    mapIframe,
+} from '@/services/env.js';
 ---
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container px-md-5">
@@ -58,8 +67,8 @@ import Envelope from '@/components/icons/Envelope.astro';
                 <h2 class="ftco-heading-2">¿Alguna consulta?</h2>
                 <div class="block-23 mb-3">
                 <ul>
-                    <li><a target="_blank" href="https://wa.me/+5492613405270"><Phone width="20" height="20" /><span class="text"> 261 340-5270</span></a></li>
-                    <li><a target="_blank" href="mailto:info@sergiorussophotography.com.ar"><Envelope width="20" height="20" /></span><span class="text">info@sergiorussophotography.com.ar</span></a></li>
+                    <li><a target="_blank" href={'https://wa.me/54'+whatsappLinkeable}><Phone width="20" height="20" /><span class="text"> {whatsappReadble}</span></a></li>
+                    <li><a target="_blank" href={'mailto:'+email}><Envelope width="20" height="20" /></span><span class="text">{email}</span></a></li>
                 </ul>
                 </div>
             </div>
@@ -67,7 +76,7 @@ import Envelope from '@/components/icons/Envelope.astro';
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-white">Diseñado por <a target="_blank" href="https://manejoweb.com.ar/" class="text-white"><strong>ManejoWeb</strong></a></p>
+                <p class="text-white">Diseñado por <a target="_blank" href="https://manejoweb.com.ar/" class="text-white"><strong>Manejo Web</strong></a></p>
             </div>
         </div>
     </div>

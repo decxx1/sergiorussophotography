@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Carousel from '@/components/Carousel.vue';
 import Instagram from '@/components/icons/Instagram.astro';
+import {instagram} from '@/services/env.js';
 ---
 <Layout 
     title="Sergio Russo Photography"
@@ -23,7 +24,7 @@ import Instagram from '@/components/icons/Instagram.astro';
                         <p transition:animate="fade">“No hacemos fotos con nuestras cámaras. Las hacemos con nuestro corazón y las hacemos con nuestras mentes, y la cámara no es más que una herramienta”. <strong>Arnold Newman</strong></p>
                         
                         <ul class="ftco-social mt-3" transition:animate="slide">
-                          <li><a target="_blank" href="https://www.instagram.com/sergio_russo_photography/"><Instagram /></a></li>
+                          <li><a target="_blank" href={instagram}><Instagram /></a></li>
                         </ul>
                     </div>
                 </div>

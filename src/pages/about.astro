@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Instagram from '@/components/icons/Instagram.astro';
+import {instagram} from '@/services/env.js';
 ---
 <Layout 
     title="Sobre Mi - Sergio Russo Photography"
@@ -25,7 +26,7 @@ import Instagram from '@/components/icons/Instagram.astro';
                         <p>En su carrera, ha sido convocado para la cobertura del evento deportivo internacional <strong>“Golf por los caminos del vino”</strong>. También por grupos de rock como los <strong>“Enanitos Verdes”</strong>, Trabajó también para el exitoso programa radial <strong>EXPRESO LATINO</strong>, realizando la cobertura fotográfica a diferentes artistas renombrados como <strong>JAF, MARCELA MORELO, MANUEL WIRZT, DESTINO SAN JAVIER, LOS NOCHEROS, NAHUEL PENNISI y FITO PAEZ</strong> entre otros. y por <strong>expertos en psicología y psiquiatría</strong> para documentar la realización de talleres terapéuticos.</p>
                         <p><strong>Publica</strong> por primera vez en la revista <strong>Sexy Glam</strong> ( de Nueva York ) en marzo de 2013. Desde entonces ha realizado varias producciones para la mencionada revista. </p>
                         <ul class="ftco-social mt-3" transition:animate="slide">
-                          <li ><a target="_blank" href="https://www.instagram.com/sergio_russo_photography/"><Instagram /></a></li>
+                          <li ><a target="_blank" href={instagram}><Instagram /></a></li>
                         </ul>
                     </div>
                 </div>
